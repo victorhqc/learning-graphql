@@ -24,7 +24,9 @@
   "homepage": "https://github.com/victorhqc/learning-graphql#readme",
   "private": true,
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "graphql-yoga": "^1.17.2",
+    "jsonwebtoken": "^8.4.0",
     "prisma": "^1.25.7",
     "prisma-client-lib": "^1.25.7"
   }
