@@ -14,6 +14,9 @@ type Mutation {
   # Login existing users
   login(email: String!, password: String!): AuthPayload,
 
+  # Vote a link
+  vote(linkId: ID!): Vote,
+
   # Updates a link.
   updateLink(id: ID!, url: String, description: String): Link,
 
@@ -26,6 +29,7 @@ type Link {
   description: String!
   url: String!
   postedBy: User
+  votes: [Vote!]!
 }
 
 type AuthPayload {
@@ -38,6 +42,12 @@ type User {
   name: String!
   email: String!
   links: [Link!]!
+}
+
+type Vote {
+  id: ID!
+  link: Link!
+  user: User!
 }
 
 type Subscription {
