@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "prisma": "prisma",
-    "build": "prisma deploy && prisma generate",
+    "build": "prisma deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
