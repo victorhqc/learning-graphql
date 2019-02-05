@@ -52,4 +52,5 @@ type Vote {
 
 type Subscription {
   newLink: Link
+  newVote: Vote
 }
